@@ -17,7 +17,7 @@ public:
 	bool operator ==(const Money&) const;
 	bool operator >(const Money&) const;
 	bool operator <(const Money&) const;
-
+	bool Init(int, int);
 	Money& operator ++();
 	Money operator ++(int);
 	Money& operator --();

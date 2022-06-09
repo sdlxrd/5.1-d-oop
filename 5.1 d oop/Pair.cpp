@@ -51,7 +51,7 @@ istream& operator >>(istream& in, Pair& x)
 	cout << "Kop = ";cin >> kops;
 	
 	if(grns < 0 || kops < 0)
-		throw nException("Grn and Kop must be > 0");
+		throw nException("\nGrn and Kop must be > 0\n");
 	
 	else
 	{

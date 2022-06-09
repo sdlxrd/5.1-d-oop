@@ -110,6 +110,18 @@ Money operator *(const Money& sum, const double n)
 	return t;
 }
 
+bool Money::Init(int x, int y)
+{
+	if (x >= 0 && y >= 0)
+	{
+		setGrn(x);
+		setKop(y);
+		return true;
+	}
+	else
+		return false;
+}
+
 bool Money::operator ==(const Money& x) const
 {
 	if ((this->getGrn() == x.getGrn()) && (this->getKop() == x.getKop()))
